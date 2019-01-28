@@ -45,7 +45,7 @@ node *create_head(node *head){
 
 node *insert(node *head){
     node* temp = NULL;
-    node* p = NULL;
+//     node* p = NULL;
     int n;
     printf("Length of the linked list: ");
     scanf("%i", &n);
@@ -53,10 +53,10 @@ node *insert(node *head){
         temp = (node*)(malloc(sizeof(node)));
         printf("Number: ");
         scanf("%i", &(temp->data));
-        p = head;
-        while( p-> next != NULL){
-            p = p->next;
-        }
+//         p = head;
+//         while( p-> next != NULL){
+//             p = p->next;
+//         }
         temp -> next = head;
         head = temp;
     }
